@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Danilo Foronda</title>
+	<link rel="stylesheet" type="text/css" href="estilo1.css">
+	<link rel="icon" type="img/png" href="icon.png">
+</head>
+	<div class="fondo"></div>
+	<div class="cuadro" id="cuadro"></div>
+	<input type="text" name="frase" placeholder="Frase" id="frase" class="frase">
+	<input type="button" name="boton" value="Mostrar" class="boton" onclick="mostrar();">	
+	<input type="text" name="mostrar" id="mostrar" class="mostrar">
+<body onkeypress="teclado()"><center>
+	<script >
+		function teclado()
+		{
+			if(event.code=="KeyA")
+			{
+				var cuadroe=document.getElementById("cuadro");
+				cuadro.className="cuadro2";
+			}
+			else
+			{}
+			if(event.code=="KeyB")
+			{
+				var cuadroe=document.getElementById("cuadro");
+				cuadro.className="cuadro3";
+			}
+			else
+			{}
+			if(event.code=="KeyC")
+			{
+				var cuadroe=document.getElementById("cuadro");
+				cuadro.className="cuadro4";
+			}
+		}
+		function mostrar()
+		{
+			var frasee=document.getElementById("frase").value;
+			document.getElementById("mostrar").value=frasee;
+		}
+	</script>
+	<font font color="" face="Ginebra">
+		<div class="instrucciones">Presione:<br>A/B/C</div>
+	</font>
+	<font font color="" face="Ginebra">
+		<div class="nota">El color del<br>cuadro cambiará</div>
+	</font>
+	<form method="get" action="https://daniloforonda.github.io/Tecnologia11/periodo1.html?"><button type="submit" id="id7">Volver</button></form>
+</center></body>
+</html>
